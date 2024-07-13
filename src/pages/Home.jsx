@@ -4,137 +4,130 @@ import "./home.css";
 function Home() {
   return (
     <>
-          {/* 1st section  */}
-      <div className=" ">
-        <div className="hero">
+      {/* 1st section  */}
+      <div className="text-center ">
+        <div className="hero" style={{ position: "relative" }}>
           <div className="p-5 justify-content-center align-items-center d-flex flex-column">
             <h1 className="">Model 3</h1>
-            <p>$7,500 Federal Tax Credit Available1</p>
-            <p>From $29,990 After Est. Savings2</p>
+            <p>$7,500 Federal Tax Credit Available<sup>1</sup></p>
+            <p style={{textDecoration:"underline"}}>From $29,990 After Est. Savings<sup>2</sup></p>
 
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
             </div>
           </div>
         </div>
 
-
-           {/* 2nd section  */}
-        <div className="hero2">
+        {/* 2nd section  */}
+        <div className="hero2" style={{ position: "relative" }}>
           <div className="p-5 justify-content-center align-items-center d-flex flex-column">
             <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
+            <p>From $31,490<sup>3</sup></p>
+            <p style={{textDecoration:"underline"}}>After $13,500 Est. Savings</p>
+
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
             </div>
           </div>
         </div>
 
-          {/* 3rd section  */}
+        {/* 3rd section  */}
 
-          <div className="hero3">
+        <div className="hero3" style={{ position: "relative" }}>
+          <div className="p-5 justify-content-center align-items-center d-flex flex-column">
+            <h1>Model X</h1>
+            <p>From $63,990<sup>4</sup></p>
+            <p>After Est. Savings</p>
+
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
+            </div>
+          </div>
+        </div>
+
+        {/* 4th section  */}
+
+        <div className="hero4" style={{ position: "relative" }}>
+          <div className="p-5 justify-content-center align-items-center d-flex flex-column">
+            <h1>Model S</h1>
+            <p>From $66,490<sup>5</sup></p>
+            <p>After Est. Savings</p>
+
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
+            </div>
+          </div>
+        </div>
+
+        {/* 5th section  */}
+
+        <div className="hero5" style={{ position: "relative" }}>
           <div className="p-5 justify-content-center align-items-center d-flex flex-column">
             <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
+            
+
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
             </div>
           </div>
         </div>
 
-          {/* 4th section  */}
+        {/* 6th section  */}
 
-          <div className="hero4">
+        <div className="hero6" style={{ position: "relative" }}>
           <div className="p-5 justify-content-center align-items-center d-flex flex-column">
-            <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
+            <h1>Solar Panels</h1>
+            <p style={{textDecoration:"underline"}}>Schedule a Virtual Consultation</p>
+            
+            <div className=" d-flex obtn gap-4">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
             </div>
           </div>
         </div>
 
-          {/* 5th section  */}
+        {/* 7th section  */}
 
-          <div className="hero5">
+        <div className="hero7" style={{ position: "relative" }}>
           <div className="p-5 justify-content-center align-items-center d-flex flex-column">
-            <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
+            <h1>Solar Roof</h1>
+            <p>Produce Clean Energy From Your Roof</p>
+            
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
             </div>
           </div>
         </div>
 
-          {/* 6th section  */}
+        {/* 8th section  */}
 
-          <div className="hero6">
+        <div className="hero8" style={{ position: "relative" }}>
           <div className="p-5 justify-content-center align-items-center d-flex flex-column">
-            <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
+            <h1>Powerwall</h1>
+            
+            <div className=" d-flex obtn gap-4 ">
+              <button className="btn btn-light rounded ">Order Now</button>
+              <button className="btn btn-dark rounded ">Demo Drive</button>
             </div>
           </div>
         </div>
 
-          {/* 7th section  */}
+        {/* 9th section  */}
 
-          <div className="hero7">
-          <div className="p-5 justify-content-center align-items-center d-flex flex-column">
-            <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
-            </div>
+        <div className="hero9" style={{ position: "relative" }}>
+          <div className="p-5 justify-content-center align-items-center d-flex flex-column ">
+            <h1 style={{ marginTop: "50px" }} className="">
+              Accessories
+            </h1>
+            <button className="btn btn-light rounded obtn  ">Shop Now</button>
           </div>
         </div>
-
-          {/* 8th section  */}
-
-          <div className="hero8">
-          <div className="p-5 justify-content-center align-items-center d-flex flex-column">
-            <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
-            </div>
-          </div>
-        </div>
-
-          {/* 9th section  */}
-
-          <div className="hero9">
-          <div className="p-5 justify-content-center align-items-center d-flex flex-column">
-            <h1>Model Y</h1>
-            <p>From $31,4903</p>
-            <p>After $13,500 Est. Savings</p>
-            <div className=" d-flex gap-5 " style={{ marginTop: "35%" }}>
-              <button className="btn btn-light rounded obtn">Order Now</button>
-              <button className="btn btn-dark rounded obtn">Demo Drive</button>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
       </div>
     </>
   );
