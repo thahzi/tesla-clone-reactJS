@@ -51,6 +51,7 @@ function Footer() {
 
         <Col sm={12} md={4}></Col>
       </Row>
+      
     </>
   );
 }

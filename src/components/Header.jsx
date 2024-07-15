@@ -1,40 +1,35 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useState } from 'react'
+import { Collapse } from 'react-bootstrap'
+import Vehicles from './Vehicles';
+import Energy from './Energy';
+
+
 
 
 
 function Header() {
+  const [open , setOpen] = useState(false);
   return (
     <>
     
-    <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">tesla</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+   <div className="container-fuild justify-content-between align-items-center p-3 d-flex ">
+    <div><h1 className='ms-5'>tesla</h1></div>
+    <div className='d-flex '>
+      <div>
+        <h6 className='btn d-flex flex-column'onClick={()=> setOpen(!open)} onMouseEnter={()=>setOpen(true)} onMouseLeave={()=> setOpen(false)}>Vehicles</h6>
+        <Collapse in={open}><div><Vehicles/></div></Collapse>
+      </div>
+     
+      <div>
+        <h6 className='btn d-flex flex-column'onClick={()=> setOpen(!open)} onMouseEnter={()=>setOpen(true)} onMouseLeave={()=> setOpen(false)}>Energy</h6>
+        <Collapse in={open}><div><Energy/></div></Collapse>
+      </div>
+      <h6 className='btn'>Charging</h6>
+      <h6 className='btn'>Discover</h6>
+      <h6 className='btn'>Shop</h6>
     </div>
+    <div className='me-5'>MENU</div>
+   </div>
 
     
   
